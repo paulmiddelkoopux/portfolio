@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <title>Paul Middelkoop – Product & Service Designer</title>
+  <style>
+    a {
+      color:rgb(39, 37, 49);
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    body {
+      font-family: Helvetica, Arial, sans-serif;;
+      display:flex;
+      justify-content:center;
+      line-height: 1.6;
+      background: #fafafa;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch' /%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23noiseFilter)' opacity='0.1' /%3E%3C/svg%3E");
+  background-repeat: repeat;
+      color: #333;
+      max-width: 100%;
+    }
+    main {
+      display: flex;
+            padding-top:5vh;
+      padding-bottom:5vh;
+      padding-left: 1rem;
+padding-right: 1rem;
+      flex-direction: column;
+      gap: 3rem;
+      max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+  
+    h1 {
+        line-height:1;
+        margin:0;
+        letter-spacing: -.5px;
+    }
+    h2 {
+        line-height: 1.25;
+        letter-spacing: -.5px;
+    }
+    h3 {
+      letter-spacing: -.5px;
+    }
+   hr {
+    border:solid 1px #e0e0e0;
+   }
+   img {
+  width: 100%;
+  height: 100%;
+  max-width: 184px;
+  max-height: 360px;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+  aspect-ratio: 0.5;
+}
+
+    li {
+      list-style: none;
+      padding-bottom:1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+        .text {
+        max-width: 640px;
+        display: block;
+    }
+    ul {
+        min-width: 320px;
+        margin: 0;
+        opacity:0.8;
+    }
+    .button {
+        border-radius: 4px;
+        padding: 4px 8px 4px 8px;
+        background-color: white;
+        border: solid 1px #949494;
+        font-weight: 700;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        cursor: auto;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 10px 28px;
+}
+.description {
+  margin: 0;
+  opacity: 0.8;
+}
+    .header {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .fadeIn{
+  width:100%;
+  height:4rem;
+  margin-top:-2rem;
+  z-index:1;
+  position: fixed;
+  top:0;
+  background: linear-gradient(0deg, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 1) 50%);
+  pointer-events:none;
+}
+.fadeOut{
+  width:100%;
+  height:8rem;
+  z-index:1;
+  position: fixed;
+  bottom:0;
+  background: linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 0) 50%);
+  pointer-events: none;
+}
+  
+    .project {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 184px;
+}
+
+.project h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.project .meta {
+  font-size: 0.9rem;
+  margin: 0;
+    opacity:0.8;
+    font-weight:700;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top:10vh;
+      padding-bottom:10vh;
+    flex-direction: row;
+  }
+  .project {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  .project-info {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+  </style>
+</head>
+<body>
+<main>
+  <img src="./assets/images/PaulMiddelkoop.jpg"></img>
+  <div class="text">
+  <header class="header">
+    <h1>Paul Middelkoop</h1>
+    <div>Product & Service Designer</div>
+    <div class="contact">
+        <a href="mailto:paul.middelkoop@gmail.com" target="_blank">
+            paul.middelkoop@gmail.com
+          </a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Hi there</h2>
+    <p class="description">As a designer, I help develop user-friendly and effective products and services. Based on Design Thinking, I facilitate workshops, map customer journeys, and design concepts to quickly validate the riskiest assumptions. I also detail flows, interaction patterns, and interfaces so that MVPs succeed on their merit — not fail due to execution.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <h3>Port of Rotterdam</h3>
+    <div class="project">
+        <div class="project-info">
+            <h3><a href="https://www.routescanner.com" target="_blank">Routescanner</a></h3>
+            <p class="meta">2022 – Present</p>
+            <p class="description">Google Maps for Global Container Shipping</p>
+          </div>
+      <ul>
+        <li>Initiated and facilitated <span style="font-weight:700">user journey mapping</span> sessions to improve onboarding.</li>
+        <li><span style="font-weight:700">Redesigned</span> the main search and results interface for better usability, responsiveness, and accessibility.</li>
+        <li>Led <span style="font-weight:700">brand update</span>.</li>
+        <li>Conducted <span style="font-weight:700">user interviews</span> to refine interaction patterns.</li>
+        <li>Used PostHog for <span style="font-weight:700">quantitative analysis</span> and opportunity spotting.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+        <div class="project-info">
+        <h3>
+            <a href="https://publications.portofrotterdam.com/digital-report-2024/port-alert" target="_blank" rel="noopener">Port Alert</a>
+          </h3> 
+          <p class="meta">2022 – 2024</p>
+          <p class="description">Alerting system for Truckers & Terminals</p>
+    </div>
+      <ul>
+        <li>Introduced the <span style="font-weight:700">Riskiest-Assumptions</span> method as a working model within the team.</li>
+        <li>Monthly roadmap and design updates <span style="font-weight:700">presented to stakeholders</span>.</li>
+        <li><span style="font-weight:700">Designed</span> 1) native app for drivers with map functionality, 2) desktop dashboard for transporters, and 3) alert tool for port terminals.</li>
+        <li>Ran <span style="font-weight:700">interview rounds</span> with drivers, terminals, and planners leading to major roadmap improvements.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+        <div class="project-info">
+        
+      <h3>Lab / Innovation / Incubation Teams</h3>
+      <p class="meta">2022 – 2024</p>
+      <p class="description">Contributed to various projects, amongst which:</p>
+    </div>
+      <ul>
+        <li><strong>Bridge Height</strong> &mdash; Facilitated problem analysis and quick wins for inland shipping efficiency.</li>
+        <li><strong>GeoFluxus</strong> &mdash; Introduced a Start-Up on Circular Waste, and facilitated setting the goals and identifying users for the pilot.</li>
+        <li><strong>PLATO</strong> &mdash; UX advice to make a data science tool (rShiny) for dredging operations accessible.</li>
+        <li><strong>Innovation Radar</strong> &mdash; Interface design for innovation mapping tool.</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <br>
+    <h3>Clockwork / Ordina</h3>
+
+    <div class="project">
+        <div class="project-info">
+      <h3>Design Guild</h3>
+      <p class="meta">2019–2022</p>
+      <p class="description">User research, interface & service design for various projects: </p>
+    </div>
+      <ul>
+        <li>National Police, Nuffic, Rabobank, KWF, ACM, NOC*NSF, Bindinc, Intermaris, HZCP, Cloudsense, VodafoneZiggo, Schuurman Schoenen.</li>
+      </ul>
+    </div>
+  </section>
+  </div>
+  <div class="fadeIn"></div>
+  <div class="fadeOut"></div>
+</main>
+
+</body>
+
+</html>
