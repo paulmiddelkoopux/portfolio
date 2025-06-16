@@ -140,6 +140,11 @@ padding-right: 1rem;
   display: grid;
   gap: 1rem;
   margin-bottom: 2rem;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInScale 1s ease-out both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
 }
 
 .project-info {
@@ -184,6 +189,18 @@ padding-right: 1rem;
     align-items: start;
   }
 }
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
   </style>
 </head>
 <body>
