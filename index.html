@@ -55,7 +55,7 @@ padding-right: 1rem;
       letter-spacing: -.5px;
     }
    hr {
-    border:solid 1px #e0e0e0;
+    border:solid 1px #f4f4f4;
    }
    i {
     display:inline-block;
@@ -67,10 +67,10 @@ padding-right: 1rem;
   width: 100%;
   height: 100%;
   max-width: 184px;
-  max-height: 360px;
+  max-height: 280px;
   object-fit: cover;
   display: block;
-  border-radius: 2px;
+  border-radius: 200px;
   aspect-ratio: 0.5;
 }
 
@@ -141,10 +141,10 @@ padding-right: 1rem;
   gap: 1rem;
   margin-bottom: 2rem;
   opacity: 0;
-  transform: scale(0.95);
-  animation: fadeInScale 1s ease-out both;
+  transform: scale(0.01);
+  animation: fadeInScale 2s ease-out both;
   animation-timeline: view();
-  animation-range: entry 20% cover 40%;
+  animation-range: entry 20% cover 30%;
 }
 
 .project-info {
@@ -193,7 +193,7 @@ padding-right: 1rem;
 @keyframes fadeInScale {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.01);
   }
   to {
     opacity: 1;
@@ -205,7 +205,7 @@ padding-right: 1rem;
 </head>
 <body>
 <main>
-  <img src="./assets/images/PaulMiddelkoop.jpg"></img>
+  <img src="./assets/images/PaulMiddelkoopProfile.png"></img>
   <div class="text">
   <header class="header">
     <h1>Paul Middelkoop</h1>
@@ -221,6 +221,9 @@ padding-right: 1rem;
     <h2>Hi there</h2>
     <p class="description">As a designer, I help develop user-friendly and effective products and services. Based on Design Thinking, I facilitate workshops, map customer journeys, and design concepts to quickly validate the riskiest assumptions. I also design flows, interaction patterns, and interfaces so that MVPs succeed on their merit — not fail due to execution.</p>
   </section>
+
+  <hr>
+  <br>
 
   <section>
     <h2>Experience</h2>
@@ -307,6 +310,8 @@ padding-right: 1rem;
         <li>An alternative way to organise your favorite Spotify albums.</li>
       </ul>
     </div>
+    <br>
+    <br>
   </section>
   </div>
   <div class="fadeIn"></div>
