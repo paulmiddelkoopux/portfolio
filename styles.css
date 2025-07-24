@@ -56,7 +56,6 @@ body {
   align-items: center;
 }
 .companyLogo {
-  margin-left:-2rem;
   width: 20px;
   height: 20px;
   padding: 4px;
@@ -68,6 +67,7 @@ body {
   font-size: 18px;
   font-weight: 900;
   margin: 0;
+  width: 100%;
 }
 
 .description {
@@ -120,14 +120,12 @@ img {
 }
 
 img.profilePictureHeader {
-  margin-top: 1rem;
   align-self: flex-start;
-  border-radius: 400px;
+  border-radius: 4px;
     background-color: lightblue;
-    aspect-ratio: 1;
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 160px;
     object-position: top;
+    height: 100%;
 }
 
 img.experienceThumbnail {
@@ -144,7 +142,8 @@ img.experienceThumbnail {
 .experience {
   display: flex;
   flex-direction: column;
-  border: #f2f2f2 solid 1px;
+  border-left: #f2f2f2 solid 1px;
+  border-right: #f2f2f2 solid 1px;
   margin: 2rem;
 }
 
@@ -188,6 +187,7 @@ main {
   flex-direction: column;
   gap: 2rem;
   align-items: stretch;
+  width: 100%;
 }
 .project .meta {
   font-size: 0.9rem;
@@ -229,7 +229,6 @@ section {
 
 ul {
   margin: 0;
-  min-width: 320px;
   opacity: 0.8;
   justify-self: left;
   align-self: left;
@@ -239,8 +238,9 @@ ul {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
 }
 @keyframes fadeInScale {
   from {
@@ -260,6 +260,16 @@ ul {
   }
 }
 @media (min-width: 900px) {
+  .companyLogo {
+    margin-left:-2rem;
+  }
+  ul {
+    min-width: 320px;
+  }
+  .experience {
+    margin:4rem;
+    border-right: #f2f2f2 solid 0px;
+  }
   .header {
     grid-template-columns: 1fr 2fr;
     display: grid;
@@ -292,12 +302,11 @@ ul {
   .projectMeta {
     align-items: start;
     flex-direction: column;
-    width:240px;
+    width:320px;
   }
 }
 .text {
   align-self: flex-start;
-    max-width: 640px;
     grid-column: 2;
     border: #f2f2f2 solid;
     border-width: 0px 1px 0px 0px;
@@ -308,7 +317,6 @@ ul {
 .textHeader {
   max-width: 640px;
   grid-column: 2;
-  padding:2rem;
 }
 .project ul {
   width: 100%;
