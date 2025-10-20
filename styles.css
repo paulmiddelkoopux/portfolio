@@ -51,9 +51,10 @@ body {
 }
 .company {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 4px;
-  align-items: center;
+  align-items: start;
+  justify-content:left;
 }
 .companyLogo {
   width: 20px;
@@ -67,7 +68,6 @@ body {
   font-size: 18px;
   font-weight: 900;
   margin: 0;
-  width: 100%;
 }
 
 .description {
@@ -105,6 +105,27 @@ h2 {
 h3 {
   letter-spacing: -.5px;
 }
+
+.horizontalLineh2 {
+  border: solid 2px #fff;
+  width: 40px;
+  justify-self: end;
+}
+
+.horizontalLineh3 {
+  border: solid 1px #fff;
+  width: 24px;
+  justify-self: end;
+}
+
+
+/* Keep the Experience heading and line side-by-side on small screens */
+.experience > section:first-child {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
 hr {
   border: solid 1px #f4f4f4;
 }
@@ -164,6 +185,7 @@ img.experienceThumbnail {
   display: flex;
   align-items: center;
   justify-content: right;
+  padding-top: 2rem;
 }
 
 li {
@@ -262,7 +284,7 @@ ul {
 }
 @media (min-width: 900px) {
   .companyLogo {
-    margin-left:-2rem;
+    margin-left:0rem;
   }
   ul {
     min-width: 320px;
