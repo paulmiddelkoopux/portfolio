@@ -134,9 +134,10 @@ img.experienceThumbnail {
   aspect-ratio: 16/9;
   object-fit: cover;
   display: block;
-  background-color: #010101;
   border: #f2f2f2 solid 1px;
   object-position: left;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .experience {
@@ -166,9 +167,10 @@ img.experienceThumbnail {
 }
 
 li {
-  list-style: none;
+  list-style-type: none;
   padding-bottom: 1rem;
 }
+
 main {
   box-sizing: border-box;
   display: flex;
@@ -216,7 +218,6 @@ main {
   height: auto;
   max-width: 100%;
   object-fit: cover;
-  border-radius: 8px;
 }
 section {
   display: flex;
