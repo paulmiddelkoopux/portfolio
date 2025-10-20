@@ -168,7 +168,7 @@ img.experienceThumbnail {
 
 li {
   list-style-type: none;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 main {
@@ -322,4 +322,33 @@ ul {
 .project ul {
   width: 100%;
   box-sizing: border-box;
+}
+/* Timeline style list for project bullets */
+.project ul {
+  position: relative;
+  padding-left: 1.5rem;
+  list-style: none; /* override global list-style for custom bullets */
+}
+.project li {
+  position: relative;
+}
+.project li::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 0.45rem;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #cacaca;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.project li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: calc(-1.125rem + 5px);
+  top: calc(0.45rem + 10px);
+  width: 2px;
+  height: calc(100%);
+  background: #eaeaea;
 }
