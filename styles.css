@@ -94,10 +94,13 @@ body {
   width: 100%;
   z-index: 1;
 }
+
 h1 {
   letter-spacing: -.5px;
   line-height: 1;
   margin: 0;
+  font-size: 4rem;
+  font-weight: 900;
 }
 h2 {
   letter-spacing: -.5px;
@@ -167,7 +170,6 @@ img.experienceThumbnail {
   flex-direction: column;
   border-left: #f2f2f2 solid 1px;
   border-right: #f2f2f2 solid 1px;
-  margin: 2rem;
 }
 
 .imageContainer {
@@ -182,11 +184,9 @@ img.experienceThumbnail {
 }
 
 .imageContainerHeader {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: right;
-  padding-top: 2rem;
 }
 
 li {
@@ -247,7 +247,7 @@ section {
   justify-content: center;
   align-items: center;
   border: #f2f2f2 solid;
-  border-width: 1px 0px 0px 0px;
+  border-width: 1px 1px 1px 1px;
 }
 
 ul {
@@ -262,8 +262,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2rem;
-  padding: 4rem;
+  padding: 2rem;
   border: #f2f2f2 0.5px solid;
   height:fit-content;
 }
@@ -280,7 +279,7 @@ ul {
 @media (min-width: 600px) {
   main {
     flex-direction: column;
-    gap: 1rem;
+    padding: 4rem;
   }
 }
 @media (min-width: 900px) {
@@ -291,7 +290,6 @@ ul {
     min-width: 320px;
   }
   .experience {
-    margin:4rem;
     border-right: #f2f2f2 solid 0px;
   }
   .header {
