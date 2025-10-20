@@ -73,6 +73,7 @@ body {
 .description {
   margin: 0;
   opacity: 0.8;
+  max-width: 65ch;
 }
 .fadeIn {
   background: linear-gradient(0deg, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 1) 50%);
@@ -199,7 +200,6 @@ main {
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  padding-top: 5vh;
   width: 100%;
   border: #f2f2f2 solid;
   border-width: 0px 0px 1px 0px;
@@ -263,7 +263,9 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  padding: 2rem;
+  padding: 4rem;
+  border: #f2f2f2 0.5px solid;
+  height:fit-content;
 }
 @keyframes fadeInScale {
   from {
@@ -278,8 +280,7 @@ ul {
 @media (min-width: 600px) {
   main {
     flex-direction: column;
-    padding-top: 10vh;
-    gap: 4rem;
+    gap: 1rem;
   }
 }
 @media (min-width: 900px) {
