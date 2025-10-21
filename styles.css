@@ -213,6 +213,7 @@ img.experienceThumbnail {
 li {
   list-style-type: none;
   margin-bottom: 1rem;
+  max-width: 65ch;
 }
 
 main {
