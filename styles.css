@@ -73,10 +73,9 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: .5px;
   background-color: #f2f2f2;
-  border: #f2f2f2 solid;
-  border-width: 1px 1px 1px 1px;
+  border: #f2f2f2 solid .5px;
 }
 
 .description {
@@ -107,13 +106,17 @@ body {
 h1 {
   letter-spacing: -.5px;
   line-height: 1;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
   font-size: 4rem;
   font-weight: 900;
 }
 h2 {
   letter-spacing: -.5px;
   line-height: 1.25;
+  font-style: italic;
+  font-weight: 400;
+  font-family: Serif;
 }
 h3 {
   letter-spacing: -.5px;
@@ -155,10 +158,20 @@ img {
 
 img.profilePictureHeader {
   align-self: flex-start;
-  border-radius: 4px;
+  border-radius: 16px;
     max-width: 160px;
     object-position: top;
     height: 100%;
+    padding: .5rem;
+    border: #f2f2f2 solid 1px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform:rotate3d(1, 1, 1, -10deg);
+    transition: transform 0.2s ease;
+}
+
+img.profilePictureHeader:hover {
+  transform:rotate3d(1, 1, 1, 0deg);
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 4px 8px;
 }
 
 img.experienceThumbnail {
@@ -360,4 +373,14 @@ ul {
   width: 2px;
   height: calc(100%);
   background: #eaeaea;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paragraph h2 {
+  margin-bottom:0;
 }
