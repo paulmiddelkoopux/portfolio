@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-... (shortened) ..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Routescanner – Paul Middelkoop</title>
+</head>
+<body>
+<main>
+  <div class="top-navigation">
+    <a href="index.html" rel="noopener">
+      <button class="buttonSecondary" style="flex-direction: row-reverse;">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to overview
+      </button>
+    </a>
+  </div>
+  <div class="content">
+  <section>
+    <div class="imageContainer">
+    </div>
+    <div class="text">
+      <h1>Routescanner</h1>
+      <div class="meta-container">
+        <div class="meta-item">
+          <p class="meta-label">Company</p>
+          <p class="meta">Port of Rotterdam</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Time</p>
+          <p class="meta">2022 – Present</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Monthly users</p>
+          <p class="meta">5,000 - 6,000</p>
+        </div>
+      </div>
+    <div class="tagCollection">
+      <div class="tag">UI Design</div>
+      <div class="tag">User Journey Mapping</div>
+      <div class="tag">User Interviews</div>
+      <div class="tag">User Analysis</div>
+      <div class="tag">Brand Update</div>
+      <div class="tag">Product Design</div>
+      <div class="tag">Qualitative Interviews</div>
+    </div>
+    <div class="paragraph">
+      <h2>Summary</h2>
+   
+      <p class="description">Routescanner is a tool that helps you find the best route for your container shipment. Sort of like Google Maps, but for global container shipping! I am responsible for the product design and validating ideas for features with users.
+    </div>
+    </div>
+  </section>
+  <section>
+      <div class="imageContainer imageContainer-centered">
+        <div class="before-after-slider" role="img" aria-label="Before and after UI design comparison">
+          <img class="before-image" src="./assets/images/routescanner-ui-before.jpg" alt="Before redesign">
+          <img class="after-image" src="./assets/images/routescanner-ui-after.jpg" alt="After redesign">
+          <div class="slider-line" 
+               role="slider" 
+               aria-label="Drag to compare before and after" 
+               aria-valuenow="50" 
+               aria-valuemin="0" 
+               aria-valuemax="100"
+               tabindex="0">
+            <div class="slider-handle">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="18" fill="white" stroke="#222" stroke-width="2"/>
+                <path d="M15 20 L18 17 M15 20 L18 23 M25 20 L22 17 M25 20 L22 23" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="image-labels">
+            <span class="label-before">Before</span>
+            <span class="label-after">After</span>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <h2>UI Design</h2>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">The Challenge</h3>
+            <p class="description">The original Routescanner interface had grown organically over time, resulting in an inconsistent visual hierarchy and interaction patterns that confused users. Mobile responsiveness was limited, and the search results page struggled to present complex shipping route data in a scannable format. Accessibility was also a concern, with insufficient color contrast and keyboard navigation issues.</p>
+          </div>
+        </div>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">What I Did</h3>
+            <p class="description">I led a complete redesign of the search and results interface, establishing a clear visual system with improved typography, spacing, and component reusability. Working closely with the development team, I created responsive layouts that adapted seamlessly from mobile to desktop. I introduced progressive disclosure patterns to manage information density and ensured WCAG 2.1 AA compliance through careful color selection and interactive element design.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="imageContainer imageContainer-centered">
+        <img class="experienceThumbnail" src="./assets/images/routescanner-user-journey-mapping.jpg" alt="User Journey Mapping">
+      </div>
+      <div class="text">
+        <h2>User Journey Mapping</h2>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">The Challenge</h3>
+            <p class="description">New users were struggling to understand how to use Routescanner effectively, often abandoning the tool after their first visit. Analytics showed a high drop-off rate during the initial search flow, and support tickets indicated confusion about key features. We needed to understand the complete user journey to identify friction points and opportunities for improvement.</p>
+          </div>
+        </div>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">What I Did</h3>
+            <p class="description">I initiated and facilitated collaborative user journey mapping sessions with stakeholders from product, engineering, and customer success. Through these workshops, we mapped the entire experience from initial discovery through first successful route search. I identified three critical pain points in the onboarding flow and proposed targeted solutions, including contextual tooltips, an improved empty state, and a simplified first-run experience that reduced cognitive load for new users.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="imageContainer imageContainer-centered">
+        <img class="experienceThumbnail" src="./assets/images/routescanner-ai-chat.jpg" alt="AI Prototyping">
+      </div>
+      <div class="text">
+        <h2>AI Prototyping for Complex Queries</h2>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">The Challenge</h3>
+            <p class="description">Users needed to conduct complex search queries that involved comparing multiple ports and routes simultaneously. The traditional form-based search interface worked well for simple point-to-point queries, but became cumbersome when users wanted to explore alternatives, compare different routing options, or analyze multiple scenarios at once. We needed a more flexible approach that could handle the nuanced, conversational nature of complex logistics planning.</p>
+          </div>
+        </div>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">What I Did</h3>
+            <p class="description">I initiated the discovery process and led prototyping efforts for an LLM integration that would help users conduct more sophisticated searches and comparisons. The key design decision was implementing a canvas-based approach rather than extending the existing form interface. This canvas interface adapts dynamically based on user needs, allowing for more natural exploration of routes and ports through conversational queries. While still in internal testing, this prototype demonstrates how AI can make complex logistics comparisons more accessible without overwhelming users with traditional form complexity.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="imageContainer imageContainer-centered">
+        <div class="before-after-slider before-after-slider-horizontal" role="img" aria-label="Before and after brand update comparison">
+          <img class="before-image" src="./assets/images/routescanner-brand-update-before.jpg" alt="Before brand update">
+          <img class="after-image" src="./assets/images/routescanner-brand-update-after.jpg" style="object-fit:contain; object-position: center; background-color: #FCFEFC;" alt="After brand update">
+          <div class="slider-line" 
+               role="slider" 
+               aria-label="Drag to compare before and after" 
+               aria-valuenow="50" 
+               aria-valuemin="0" 
+               aria-valuemax="100"
+               tabindex="0">
+            <div class="slider-handle">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="18" fill="white" stroke="#222" stroke-width="2"/>
+                <path d="M20 15 L17 18 M20 15 L23 18 M20 25 L17 22 M20 25 L23 22" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="image-labels">
+            <span class="label-before">Before</span>
+            <span class="label-after">After</span>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <h2>Brand Update</h2>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">The Challenge</h3>
+            <p class="description">Routescanner's visual identity hadn't evolved with its expanding feature set and increasingly sophisticated target audience. The brand felt dated and didn't effectively communicate the tool's value proposition to logistics professionals at enterprise companies. We needed to refresh the brand while maintaining recognition among existing users and aligning with Port of Rotterdam's corporate identity.</p>
+          </div>
+        </div>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">What I Did</h3>
+            <p class="description">I led the brand update initiative, conducting competitive analysis and stakeholder interviews to define our visual direction. I developed a refined color palette, updated typography system, and new iconography that balanced professionalism with approachability. The rebrand extended to marketing materials and product messaging, better articulating our value proposition to mid-market and enterprise logistics teams while maintaining continuity for existing users.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="imageContainer imageContainer-centered">
+        <img class="experienceThumbnail" src="./assets/images/routscanner-user-research.jpg" style="object-fit:contain; object-position: center; background-color: #4A4A4A;" alt="User Interviews">
+      </div>
+      <div class="text">
+        <h2>User Interview Insights</h2>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">The Challenge</h3>
+            <p class="description">While we had quantitative data showing where users were struggling, we lacked deep qualitative insights into why certain interaction patterns weren't working. Feature adoption rates were lower than expected, and we needed to understand the mental models and workflows of logistics professionals to design more intuitive solutions.</p>
+          </div>
+        </div>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">What I Did</h3>
+            <p class="description">I designed and conducted a series of semi-structured user interviews with 12 logistics coordinators and freight forwarders representing our core user segments. Through these conversations, I uncovered critical insights about how route comparison decisions are actually made in practice, which differed significantly from our assumptions. These findings directly informed the redesign of our route comparison interface and filtering system, resulting in a 40% increase in feature engagement.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="imageContainer imageContainer-centered">
+        <img class="experienceThumbnail" src="./assets/images/routescanner-posthog.jpg" alt="Quantitative Analysis">
+      </div>
+      <div class="text">
+        <h2>Quantitative Analysis with PostHog</h2>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">The Challenge</h3>
+            <p class="description">We were making product decisions based on limited data and anecdotal feedback. Without robust analytics, we couldn't measure the impact of our design changes, prioritize feature development effectively, or identify usage patterns that indicated opportunities for optimization. We needed a comprehensive analytics solution that would give us visibility into user behavior across the entire product.</p>
+          </div>
+        </div>
+        
+        <div class="paragraph">
+          <div class="paragraph-item">
+            <h3 style="font-weight: 400;">What I Did</h3>
+            <p class="description">Working closely with our data scientist, I established PostHog dashboards to track critical metrics including search success rates, feature adoption, and user retention cohorts. Together, we analyzed funnel drop-offs and session recordings to identify several quick wins that improved conversion rates. By combining quantitative data from PostHog with qualitative user research, we developed a data-driven approach that now informs our product roadmap and allows us to validate design hypotheses through A/B testing before full rollout.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  
+</div>
+  </div>
+  <div class="fadeIn"></div>
+  <div class="fadeOut"></div>
+</div>
+
+<div class="navigation">
+  <a href="index.html" rel="noopener"><button class="buttonPrimary" style="flex-direction: row-reverse;">Back to portfolio overview<i class="fa-solid fa-arrow-left"></i></button></a>
+  <a href="https://routescanner.com" target="_blank" rel="noopener"><button class="buttonSecondary">Go to Routescanner website<i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+</div>
+</main>
+
+<script>
+// Before/After Image Comparison Slider
+document.querySelectorAll('.before-after-slider').forEach(slider => {
+  const sliderLine = slider.querySelector('.slider-line');
+  const afterImage = slider.querySelector('.after-image');
+  const isHorizontal = slider.classList.contains('before-after-slider-horizontal');
+  let isDragging = false;
+  
+  function updateSliderPosition(coord) {
+    const rect = slider.getBoundingClientRect();
+    let percentage;
+    
+    if (isHorizontal) {
+      const offsetY = coord - rect.top;
+      percentage = Math.max(0, Math.min(100, (offsetY / rect.height) * 100));
+      sliderLine.style.top = percentage + '%';
+      afterImage.style.clipPath = `inset(${percentage}% 0 0 0)`;
+    } else {
+      const offsetX = coord - rect.left;
+      percentage = Math.max(0, Math.min(100, (offsetX / rect.width) * 100));
+      sliderLine.style.left = percentage + '%';
+      afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+    }
+    
+    sliderLine.setAttribute('aria-valuenow', Math.round(percentage));
+  }
+  
+  // Mouse events
+  sliderLine.addEventListener('mousedown', () => {
+    isDragging = true;
+  });
+  
+  document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      updateSliderPosition(isHorizontal ? e.clientY : e.clientX);
+    }
+  });
+  
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+  
+  // Touch events
+  sliderLine.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    e.preventDefault();
+  });
+  
+  document.addEventListener('touchmove', (e) => {
+    if (isDragging) {
+      updateSliderPosition(isHorizontal ? e.touches[0].clientY : e.touches[0].clientX);
+      e.preventDefault();
+    }
+  }, { passive: false });
+  
+  document.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+  
+  // Keyboard accessibility (arrow keys move 5% per press)
+  sliderLine.addEventListener('keydown', (e) => {
+    const currentValue = parseInt(sliderLine.getAttribute('aria-valuenow'));
+    let newValue;
+    
+    if (isHorizontal) {
+      if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        newValue = Math.max(0, currentValue - 5);
+        sliderLine.style.top = newValue + '%';
+        afterImage.style.clipPath = `inset(${newValue}% 0 0 0)`;
+        sliderLine.setAttribute('aria-valuenow', newValue);
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        newValue = Math.min(100, currentValue + 5);
+        sliderLine.style.top = newValue + '%';
+        afterImage.style.clipPath = `inset(${newValue}% 0 0 0)`;
+        sliderLine.setAttribute('aria-valuenow', newValue);
+      }
+    } else {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        newValue = Math.max(0, currentValue - 5);
+        sliderLine.style.left = newValue + '%';
+        afterImage.style.clipPath = `inset(0 0 0 ${newValue}%)`;
+        sliderLine.setAttribute('aria-valuenow', newValue);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        newValue = Math.min(100, currentValue + 5);
+        sliderLine.style.left = newValue + '%';
+        afterImage.style.clipPath = `inset(0 0 0 ${newValue}%)`;
+        sliderLine.setAttribute('aria-valuenow', newValue);
+      }
+    }
+  });
+  
+  // Click anywhere on slider to jump to that position
+  slider.addEventListener('click', (e) => {
+    if (!e.target.closest('.slider-line')) {
+      updateSliderPosition(isHorizontal ? e.clientY : e.clientX);
+    }
+  });
+});
+</script>
+
+</body>
+
+</html>
