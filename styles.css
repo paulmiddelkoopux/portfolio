@@ -261,6 +261,20 @@ img.experienceThumbnail {
   box-sizing: border-box;
 }
 
+@media (max-width: 1279px) {
+  section {
+    align-items: flex-start;
+  }
+  .imageContainer {
+    margin: 0;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+  .imageContainer-centered {
+    align-self: flex-start;
+  }
+}
+
 .imageContainer-centered {
   align-self: center;
 }
@@ -269,6 +283,7 @@ img.experienceThumbnail {
   display: flex;
   align-items: center;
   justify-content: right;
+  margin-top: 2rem;
 }
 
 li {
@@ -314,11 +329,12 @@ main {
 }
 
 .meta-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  max-width: 480px;
 }
 
 .meta-item {
@@ -354,6 +370,7 @@ section {
   justify-content: center;
   align-items: center;
   background-color: white;
+  padding-top: 2rem;
 }
 
 ul {
@@ -409,11 +426,26 @@ ul {
     max-width: 640px;
     margin: 0 0 0 2rem;
   }
+}
+@media (min-width: 1280px) {
   section {
-    grid-template-columns: 1fr 2fr;
     display: grid;
+    grid-template-columns: 3fr 2fr;
     justify-content: center;
     align-items: center;
+  }
+  .text {
+    grid-column: 2;
+    min-width: 720px;
+  }
+  .imageContainer {
+    max-width: 960px;
+  }
+  /* Keep header using its compact flex layout */
+  main > .content > section:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1024px) {
@@ -425,8 +457,7 @@ ul {
 }
 .text {
   align-self: flex-start;
-    grid-column: 2;
-    padding:2rem;
+  padding:2rem;
 }
 
 .textHeader {
@@ -473,6 +504,10 @@ ul {
   border: 2px solid #cacaca;
   background: #ffffff;
   border-radius: 50%;
+  transition: border-color 0.2s ease;
+}
+.project li.scrolled-past::before {
+  border-color: #666;
 }
 .project li:not(:last-child)::after {
   content: "";
@@ -482,6 +517,10 @@ ul {
   width: 2px;
   height: calc(100%);
   background: #eaeaea;
+  transition: background-color 0.2s ease, background 0.2s ease;
+}
+.project li.scrolled-past:not(:last-child)::after {
+  background: #666;
 }
 
 .paragraph {
