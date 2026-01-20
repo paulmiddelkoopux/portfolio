@@ -40,6 +40,7 @@ body {
 
 .buttonPrimary {
   margin-top: .5rem;
+  font-size: 14px;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -73,6 +74,7 @@ body {
 
 .buttonSecondary {
   margin-top: .5rem;
+  font-size: 14px;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
