@@ -479,6 +479,12 @@ ul {
     align-items: flex-start;
   }
 }
+@media (min-width: 1680px) {
+  .project {
+    display:flex;
+    max-width: 65ch;;
+}
+}
 .text {
   align-self: flex-start;
   padding:2rem;
@@ -517,6 +523,7 @@ ul {
 }
 .project li {
   position: relative;
+  max-width: 100%;
 }
 .project li::before {
   content: "";
