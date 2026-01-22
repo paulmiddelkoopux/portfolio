@@ -137,7 +137,6 @@ body {
 .description {
   margin: 0;
   opacity: 0.8;
-  max-width: 65ch;
 }
 .fadeIn {
   background: linear-gradient(0deg, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 1) 50%);
@@ -194,7 +193,7 @@ h3 {
 /* Keep the Experience heading and line side-by-side on small screens */
 .experience > section:first-child {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
@@ -411,11 +410,7 @@ ul {
   .experience {
     border-right: #f2f2f2 solid 0px;
   }
-  .project {
-    display:grid;
-    align-items: flex-start;  
-    grid-template-columns: 1fr 2fr;
-  }
+
   .projectThumbnail {
     width: 40%;
     max-width: 320px;
@@ -428,24 +423,8 @@ ul {
   }
 }
 @media (min-width: 1280px) {
-  section {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    justify-content: center;
-    align-items: center;
-  }
-  .text {
-    grid-column: 2;
-    min-width: 720px;
-  }
   .imageContainer {
     max-width: 960px;
-  }
-  /* Keep header using its compact flex layout */
-  main > .content > section:first-of-type {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
   }
 }
 @media (min-width: 1024px) {
@@ -454,35 +433,28 @@ ul {
     flex-direction: column;
     width:320px;
   }
-}
-@media (min-width: 1024px) and (max-width: 1679px) {
   section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   .text {
     grid-column: 2;
+    max-width: 65ch;
   }
-  .project {
-    display: flex;
-    flex-direction: column;
+  .imageContainer {
+    grid-column: 1;
   }
+}
+@media (min-width: 1024px) and (max-width: 1679px) {
   .projectMeta {
     width: auto;
-  }
-  /* Keep header using its compact flex layout */
-  main > .content > section:first-of-type {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
   }
 }
 @media (min-width: 1680px) {
   .project {
     display:flex;
-    max-width: 65ch;;
 }
 }
 .text {
