@@ -278,6 +278,31 @@ img.experienceThumbnail {
   align-self: center;
 }
 
+.confidential-notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 3rem 2rem;
+  border: 1px dashed #d0d0d0;
+  border-radius: 4px;
+  color: #999;
+  text-align: center;
+}
+
+.confidential-notice i {
+  font-size: 1.25rem;
+  opacity: 0.5;
+}
+
+.confidential-notice p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 .imageContainerHeader {
   display: flex;
   align-items: center;
