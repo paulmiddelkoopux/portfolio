@@ -508,6 +508,7 @@ ul {
   background: #ffffff;
   border-radius: 50%;
   transition: border-color 0.2s ease;
+  z-index: 1;
 }
 .project li.scrolled-past::before {
   border-color: #666;
@@ -516,9 +517,9 @@ ul {
   content: "";
   position: absolute;
   left: calc(-1.125rem + 5px);
-  top: calc(0.45rem + 10px);
+  top: calc(0.45rem + 5px);
   width: 2px;
-  height: calc(100%);
+  height: calc(100% + 1rem);
   background: #eaeaea;
   transition: background-color 0.2s ease, background 0.2s ease;
 }
